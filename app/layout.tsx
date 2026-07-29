@@ -49,7 +49,7 @@ export default function RootLayout({
       className={cx(GeistSans.variable, GeistMono.variable)}
       style={{ backgroundColor: 'var(--paper)', color: 'var(--ink)' }}
     >
-      <body className="antialiased max-w-4xl mx-auto mt-8 px-10">
+      <body className="antialiased max-w-full mx-auto mt-8 px-10">
         <main className="flex-auto min-w-0 mt-6 flex flex-col">
           <Navbar />
           {children}

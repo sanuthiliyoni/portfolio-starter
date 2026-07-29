@@ -55,10 +55,10 @@ export default function Page() {
             {`ME`}
           </p>
           <p className="mb-4 pl-4 border-l-2" style={{ borderColor: 'var(--accent)' }}>
-            {`I'm a Computer Science Undergraduate trying to understand what's happening in the tech industry! Currently fluent in console.log() debugging and Googling error messages I don't understand. My code works and I genuinely don't know why — but I'm learning to be less scared of that.`}
+            {`I'm a Computer Science Undergraduate trying to understand what's happening in the tech industry! Currently fluent in console.log() debugging and Googling error messages I don't understand. My code works and I genuinely don't know why, but I'm learning to be less scared of that.`}
           </p>
           <p className="mb-10 pl-4 border-l-2" style={{ borderColor: 'var(--accent)' }}>
-            {`When I'm not fighting with semicolons, you can find me turning coffee into (mostly functional) code. Always down to chat about tech, memes, or why my code broke at 2am for no reason.`}
+            {`Always down to chat about tech, memes. The goal is to live on the quote "If u get 10,000 errors in your code, you just found 10,000 ways that it didnt work!" stay positive!!`}
           </p>
 
           <p className="mb-3 font-mono text-xs uppercase tracking-widest" style={{ color: 'var(--muted)' }}>

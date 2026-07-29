@@ -5,7 +5,7 @@ export function BlogPosts() {
   let allBlogs = getBlogPosts()
 
   return (
-    <div>
+    <div className="flex flex-col gap-4">
       {allBlogs
         .sort((a, b) => {
           if (
@@ -16,20 +16,30 @@ export function BlogPosts() {
           return 1
         })
         .map((post) => (
-          <Link
+          <div
             key={post.slug}
-            className="flex flex-col space-y-1 mb-4"
-            href={`/blog/${post.slug}`}
+            className="p-4 rounded-lg transition-all hover:-translate-y-0.5"
+            style={{ border: '1px solid var(--muted)' }}
           >
-            <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-              <p className="w-[100px] tabular-nums" style={{ color: 'var(--muted)' }}>
-                {formatDate(post.metadata.publishedAt, false)}
+            <p className="text-sm mb-1 tabular-nums" style={{ color: 'var(--muted)' }}>
+              {formatDate(post.metadata.publishedAt, false)}
+            </p>
+            <h3 className="font-semibold text-lg mb-1" style={{ color: 'var(--ink)' }}>
+              {post.metadata.title}
+            </h3>
+            {post.metadata.summary && (
+              <p className="text-sm mb-3" style={{ color: 'var(--muted)' }}>
+                {post.metadata.summary}
               </p>
-              <p className="tracking-tight" style={{ color: 'var(--ink)' }}>
-                {post.metadata.title}
-              </p>
-            </div>
-          </Link>
+            )}
+            <Link
+              href={`/blog/${post.slug}`}
+              className="text-sm font-medium"
+              style={{ color: 'var(--accent)' }}
+            >
+              Read post →
+            </Link>
+          </div>
         ))}
     </div>
   )

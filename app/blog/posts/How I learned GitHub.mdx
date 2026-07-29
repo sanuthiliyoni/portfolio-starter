@@ -1,52 +1,54 @@
 ---
-title: 'How I learned GitHub : Freescope at the comfort of my house'
-publishedAt: '2024-04-07'
-summary: 'In the ever-evolving landscape of software development, the debate between dynamic and static typing continues to be a hot topic.'
+title: 'How I Learned GitHub: Freescope at the Comfort of My House'
+publishedAt: '2026-04-13'
+summary: 'A judgment-free account of how I finally understood git, commits, and why I kept committing straight to main.'
 ---
 
-In the ever-evolving landscape of software development, the debate between dynamic and static typing continues to be a hot topic. While dynamic typing offers flexibility and rapid development, static typing brings its own set of powerful advantages that can significantly improve the quality and maintainability of code. In this post, we'll explore why static typing is crucial for developers, accompanied by practical examples through markdown code snippets.
+For the longest time, GitHub was just "that place with the cat logo where I upload my assignments." I knew *of* git. I did not know git. There's a difference, and I found that out the hard way more than once.
 
-## Improved Code Quality and Safety
+## Where I Started
 
-One of the most compelling reasons to use static typing is the improvement it brings to code quality and safety. By enforcing type checks at compile time, static typing catches errors early in the development process, reducing the chances of runtime errors.
+My first "workflow" was genuinely just:
 
-```ts
-function greet(name: string): string {
-  return `Hello, ${name}!`
-}
-
-// This will throw an error at compile time, preventing potential runtime issues.
-let message: string = greet(123)
+```bash
+git add .
+git commit -m "fix"
+git push
 ```
 
-## Enhanced Readability and Maintainability
+Over and over. Every commit message said "fix." Future me had zero idea what any of it fixed. If you've done this too, no judgment — we've all been there.
 
-Static typing makes code more readable and maintainable. By explicitly declaring types, developers provide a clear contract of what the code does, making it easier for others (or themselves in the future) to understand and modify the codebase.
+## The Moment It Clicked
 
-## Facilitates Tooling and Refactoring
+The thing that finally made git make sense wasn't a tutorial, it was breaking my own project badly enough that I had to actually understand what a commit was to undo my mistake. Turns out commits are just checkpoints — snapshots of your project you can go back to. Once I understood that, everything else started falling into place.
 
-Modern IDEs leverage static typing to offer advanced features like code completion, refactoring, and static analysis. These tools can automatically detect issues, suggest fixes, and safely refactor code, enhancing developer productivity and reducing the likelihood of introducing bugs during refactoring.
-
-```csharp
-// Refactoring example: Renaming a method in C#
-public class Calculator {
-    public int Add(int a, int b) {
-        return a + b;
-    }
-}
-
-// After refactoring `Add` to `Sum`, all references are automatically updated.
-public class Calculator {
-    public int Sum(int a, int b) {
-        return a + b;
-    }
-}
+```bash
+git log --oneline
+git checkout <commit-hash>
 ```
 
-## Performance Optimizations
+Suddenly git wasn't scary, it was a safety net.
 
-Static typing can lead to better performance. Since types are known at compile time, compilers can optimize the generated code more effectively. This can result in faster execution times and lower resource consumption.
+## Branches Finally Made Sense Too
 
-## Conclusion
+I used to think branches were an "advanced" feature for real developers. Turns out they're just: make a copy of your code, mess around freely, and merge it back in once it works.
 
-Static typing offers numerous benefits that contribute to the development of robust, efficient, and maintainable software. By catching errors early, enhancing readability, facilitating tooling, and enabling optimizations, static typing is an invaluable asset for developers. As the software industry continues to mature, the importance of static typing in ensuring code quality and performance cannot be overstated. Whether you're working on a large-scale enterprise application or a small project, embracing static typing can lead to better software development outcomes.
+```bash
+git checkout -b add-new-feature
+# do your thing, break stuff, fix it
+git checkout main
+git merge add-new-feature
+```
+
+No more being terrified to experiment directly on `main`.
+
+## What I'd Tell Past Me
+
+- Commit often, and actually write what you changed, not just "fix"
+- Branches are for trying things, not just for "serious" projects
+- `git status` is your friend — run it constantly, it always tells you what's going on
+- Breaking something isn't a disaster, it's just a `git log` away from being fixed
+
+## Wrapping Up
+
+Learning GitHub properly didn't happen through a single course, it happened through a lot of small confused moments and slowly building actual intuition for what these commands were doing. If you're still in the "commit message says fix" phase — you're doing fine. Keep going.
