@@ -68,7 +68,7 @@ export default function Page() {
         {projects.map((project) => (
           
             key={project,title}
-            href={project,link}
+          <a  href={project,link}
             target="_blank"
             rel="noopener noreferrer"
             className="block p-4 rounded-lg transition-all hover:-translate-y-0.5"
