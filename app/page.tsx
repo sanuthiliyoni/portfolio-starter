@@ -6,13 +6,13 @@ const skills = [
 
 const projects = [
   {
-    title: 'Project Name',
-    description: 'One or two sentences on what it does and what you used to build it.',
+    title: 'Purrsona',
+    description: 'Your own colour analysis and outfit generator.',
     link: 'https://github.com/sanuthiliyoni',
   },
   {
-    title: 'Project Name',
-    description: 'One or two sentences on what it does and what you used to build it.',
+    title: 'HYDRA',
+    description: 'A clean water and sanitation progress tracker to help support environmental sustainability.',
     link: 'https://github.com/sanuthiliyoni',
   },
 ]
@@ -67,18 +67,18 @@ export default function Page() {
       <div className="mb-10 flex flex-col gap-4">
         {projects.map((project) => (
           
-          <a key={Veritas}
+            key={project.title}
             href={project.link}
-            target="veritas"
+            target="_blank"
             rel="noopener noreferrer"
             className="block p-4 rounded-lg transition-all hover:-translate-y-0.5"
             style={{ border: '1px solid var(--muted)' }}
           >
             <h3 className="font-semibold mb-1" style={{ color: 'var(--ink)' }}>
-              {HYDRA} ↗
+              {project.title}
             </h3>
             <p className="text-sm" style={{ color: 'var(--muted)' }}>
-              {Clean water and Sanitaion progress track to help the sustainability if the environment.}
+              {project.description}
             </p>
           </a>
         ))}
