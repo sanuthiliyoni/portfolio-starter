@@ -23,7 +23,7 @@ export default function Footer() {
         style={{ color: 'var(--muted)' }}
       >
         <li>
-          
+          <a
             className="flex items-center transition-all"
             style={{ color: 'var(--muted)' }}
             rel="noopener noreferrer"
@@ -35,7 +35,7 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          
+          <a
             className="flex items-center transition-all"
             style={{ color: 'var(--muted)' }}
             rel="noopener noreferrer"
@@ -47,6 +47,7 @@ export default function Footer() {
           </a>
         </li>
         <li>
+          <a
             className="flex items-center transition-all"
             style={{ color: 'var(--muted)' }}
             rel="noopener noreferrer"
