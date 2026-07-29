@@ -67,7 +67,7 @@ export default function Page() {
       <div className="mb-10 flex flex-col gap-4">
         {projects.map((project) => (
           
-            key={project.title}
+          <a key={project.title}
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
