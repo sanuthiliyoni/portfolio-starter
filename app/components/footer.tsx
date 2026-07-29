@@ -22,7 +22,7 @@ export default function Footer() {
         className="font-sm mt-8 flex flex-col space-x-0 space-y-2 md:flex-row md:space-x-4 md:space-y-0"
         style={{ color: 'var(--muted)' }}
       >
-        <li
+        <li>
           
             className="flex items-center transition-all"
             style={{ color: 'var(--muted)' }}
@@ -34,7 +34,7 @@ export default function Footer() {
             <p className="ml-2 h-7">rss</p>
           </a>
         </li>
-        <li
+        <li>
           
             className="flex items-center transition-all"
             style={{ color: 'var(--muted)' }}
@@ -46,7 +46,7 @@ export default function Footer() {
             <p className="ml-2 h-7">github</p>
           </a>
         </li>
-        <li
+        <li>
             className="flex items-center transition-all"
             style={{ color: 'var(--muted)' }}
             rel="noopener noreferrer"
