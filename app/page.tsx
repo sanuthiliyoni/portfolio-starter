@@ -67,8 +67,8 @@ export default function Page() {
       <div className="mb-10 flex flex-col gap-4">
         {projects.map((project) => (
           
-            key={project.title}
-            href={project.link}
+            key={project,title}
+            href={project,link}
             target="_blank"
             rel="noopener noreferrer"
             className="block p-4 rounded-lg transition-all hover:-translate-y-0.5"
