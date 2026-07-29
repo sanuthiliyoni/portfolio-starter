@@ -1,11 +1,13 @@
 @import 'tailwindcss';
 
-::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
-}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
 
 :root {
+  --paper: #FAF7F0;
+  --ink: #1A1A1A;
+  --accent: #2D7D6E;
+  --muted: #6B6B6B;
+
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
   --sh-sign: #8996a3;
@@ -17,8 +19,15 @@
   --sh-entity: #e25a1c;
 }
 
+::selection {
+  background-color: var(--accent);
+  color: var(--paper);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
+    --paper: #1A1A1A;
+    --ink: #FAF7F0;
     --sh-class: #4c97f8;
     --sh-identifier: white;
     --sh-keyword: #f47067;
@@ -138,13 +147,4 @@ input[type='email'] {
   appearance: none;
 }
 
-table {
-  display: block;
-  max-width: fit-content;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.title {
-  text-wrap: balance;
-}
+table
