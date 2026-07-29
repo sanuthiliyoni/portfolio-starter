@@ -15,6 +15,21 @@ const projects = [
     description: 'A clean water and sanitation progress tracker to help support environmental sustainability.',
     link: 'https://github.com/sanuthiliyoni',
   },
+  {
+    title: 'VERITAS',
+    description: 'A library System.',
+    link: 'https://github.com/sanuthiliyoni',
+  },
+  {
+    title: 'Portfolio - Starter',
+    description: 'Creating my own portfolio using vercel.',
+    link: 'https://github.com/sanuthiliyoni',
+  },
+  {
+    title: 'Supermemory',
+    description: 'Study guide and short note generator for students',
+    link: 'https://github.com/sanuthiliyoni',
+  },
 ]
 
 export default function Page() {
@@ -67,8 +82,8 @@ export default function Page() {
       <div className="mb-10 flex flex-col gap-4">
         {projects.map((project) => (
           
-            key={project,title}
-            href={project,link}
+          <a key={project.title}
+            href={project.link}
             target="_blank"
             rel="noopener noreferrer"
             className="block p-4 rounded-lg transition-all hover:-translate-y-0.5"
