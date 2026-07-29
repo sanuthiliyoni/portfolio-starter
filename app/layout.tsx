@@ -49,8 +49,8 @@ export default function RootLayout({
       className={cx(GeistSans.variable, GeistMono.variable)}
       style={{ backgroundColor: 'var(--paper)', color: 'var(--ink)' }}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+      <body className="antialiased max-w-4xl mx-auto mt-8 px-10">
+        <main className="flex-auto min-w-0 mt-6 flex flex-col">
           <Navbar />
           {children}
           <Footer />
