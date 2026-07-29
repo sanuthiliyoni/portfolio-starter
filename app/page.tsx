@@ -21,7 +21,7 @@ export default function Page() {
   return (
     <section>
       <p className="mb-2 font-mono text-xs uppercase tracking-widest" style={{ color: 'var(--muted)' }}>
-        {`// hello world`}
+        {`hello there !`}
       </p>
       <h1
         className="mb-2 text-4xl font-bold tracking-tight"
@@ -34,7 +34,7 @@ export default function Page() {
       </p>
 
       <p className="mb-2 font-mono text-xs uppercase tracking-widest" style={{ color: 'var(--muted)' }}>
-        {`// about me`}
+        {`ME`}
       </p>
       <p className="mb-4 pl-4 border-l-2" style={{ borderColor: 'var(--accent)' }}>
         {`I'm a Computer Science Undergraduate trying to understand what's happening in the tech industry! Currently fluent in console.log() debugging and Googling error messages I don't understand. My code works and I genuinely don't know why — but I'm learning to be less scared of that.`}
@@ -44,7 +44,7 @@ export default function Page() {
       </p>
 
       <p className="mb-3 font-mono text-xs uppercase tracking-widest" style={{ color: 'var(--muted)' }}>
-        {`// skills`}
+        {`Skills`}
       </p>
       <div className="mb-10 flex flex-wrap gap-2">
         {skills.map((skill) => (
@@ -62,30 +62,30 @@ export default function Page() {
       </div>
 
       <p className="mb-3 font-mono text-xs uppercase tracking-widest" style={{ color: 'var(--muted)' }}>
-        {`// projects`}
+        {`Projects`}
       </p>
       <div className="mb-10 flex flex-col gap-4">
         {projects.map((project) => (
           
-          <a key={project.title}
+          <a key={Veritas}
             href={project.link}
-            target="_blank"
+            target="veritas"
             rel="noopener noreferrer"
             className="block p-4 rounded-lg transition-all hover:-translate-y-0.5"
             style={{ border: '1px solid var(--muted)' }}
           >
             <h3 className="font-semibold mb-1" style={{ color: 'var(--ink)' }}>
-              {project.title} ↗
+              {HYDRA} ↗
             </h3>
             <p className="text-sm" style={{ color: 'var(--muted)' }}>
-              {project.description}
+              {Clean water and Sanitaion progress track to help the sustainability if the environment.}
             </p>
           </a>
         ))}
       </div>
 
       <p className="mb-3 font-mono text-xs uppercase tracking-widest" style={{ color: 'var(--muted)' }}>
-        {`// writing`}
+        {`Writing`}
       </p>
       <div className="my-4">
         <BlogPosts />
