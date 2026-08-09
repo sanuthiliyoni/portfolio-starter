@@ -15,7 +15,7 @@ This is a porfolio site template complete with a blog. Includes -
 
 https://portfolio-blog-starter.vercel.app
 
-## How to Use
+## How to Use - 
 
 You can choose from one of the following two methods to use this repository:
 
