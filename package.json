@@ -4,7 +4,7 @@
     "dev": "next dev",
     "build": "next build",  
     "start": "next start"
-  },
+  }, 
   "dependencies": { 
     "@tailwindcss/postcss": "4.0.0-alpha.13",
     "@types/node": "20.11.17",
