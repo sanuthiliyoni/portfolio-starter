@@ -10,7 +10,7 @@ This is a porfolio site template complete with a blog. Includes -
 - Tailwind v4 (ailwind is the CSS/styling tool for making things look good quickly)
 - Vercel Speed Insights / Web Analytics (Tools that show you how fast your site loads for visitors)
 - Geist font (Just a specific font (typeface) — made by Vercel) 
- 
+  
 ## Demo  
 https://portfolio-blog-starter.vercel.app
  
