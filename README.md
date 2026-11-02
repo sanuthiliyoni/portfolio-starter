@@ -7,7 +7,7 @@ This is a porfolio site template complete with a blog. Includes -
 - RSS Feed(A feed format that lets people "subscribe" to your blog using an RSS reader app, so they get notified when you post something new)
 - Dynamic OG images ("OG" = Open Graph. These are the preview images that show up when you share a link on Twitter/LinkedIn/Slack (the little card with an image, title, description). "Dynamic" means it auto-generates a custom image per page instead of using one static image everywhere)
 - Syntax highlighting (Makes code snippets in your blog posts colorful and readabl)
-- Tailwind v4 (ailwind is the CSS/styling tool for making things look good quickly)
+- Tailwind v4 (ailwind is the CSS/styling tool for making things look good quickly) 
 - Vercel Speed Insights / Web Analytics (Tools that show you how fast your site loads for visitors)
 - Geist font (Just a specific font (typeface) — made by Vercel)  
   
